@@ -1,0 +1,48 @@
+module TB_CPU;
+ 
+    reg tb_reset = 0'b0;
+    reg tb_clk;
+    reg tb_select;
+    reg [7:0]tb_data_bus_in;
+    wire [7:0]tb_data_bus_out;
+    wire [5:0]tb_adr_bus;
+    wire tb_rd_mem;
+    wire tb_wr_mem;
+  
+    /*reg clockNumber = 0;*/
+    
+    integer dataFile1,dataFile2,reportFile;
+            
+    CPU c (tb_reset,tb_clk,tb_adr_bus,tb_rd_mem,tb_wr_mem,tb_data_bus_in,tb_data_bus_out,tb_select);
+            
+    initial begin
+      tb_reset = 1'b1; #7 tb_reset = 1'b0;
+      tb_clk = 0; 
+    end
+    
+    always #20 tb_clk = ~tb_clk;
+    
+    initial begin 
+      dataFile1  = $fopen("data_in.dat", "r");
+      dataFile2  = $fopen("in_select.dat", "r");
+      reportFile = $fopen("reportFile.rpt", "w");
+    
+      while (!$feof (dataFile1) /*&& (clockNumber != 22)*/) begin
+        
+        $fscanf(dataFile2,"%b\n",tb_select);
+        $fscanf(dataFile1,"%b\n",tb_data_bus_in);
+        
+        @(posedge tb_clk);#1;
+        /*clockNumber = clockNumber + 1;*/
+        #80;
+        $fdisplay(reportFile,"%b",tb_data_bus_out);
+        
+      end
+      #120;
+      $finish;
+    end
+endmodule
+
+
+
+

@@ -1,0 +1,22 @@
+module Memory (RdReg1, WrReg, WrData, WrRegControl, Data1, Clock);
+  
+input [5:0] RdReg1, WrReg; input [7:0] WrData;
+input WrRegControl, Clock;
+output [7:0] Data1; // the register values read
+reg [7:0] RF[0:63]; //64 registers, each 32 bits
+RF[0] = 8'b00000000;
+RF[1] = 8'b00000001;
+RF[2] = 8'b00000001;
+RF[3] = 8'b00000010;
+RF[4] = 8'b00000011;
+RF[5] = 8'b00000101;
+RF[6] = 8'b00001000;
+assign Data1= RF[RdReg1]; 
+//assign Data2= RF[RdReg2];
+
+always @(posedge Clock) //clock only required during write operation 
+  begin
+    if (WrRegControl) // Controlling signal from control unit
+      RF[WrReg] <= WrData; // use ?non-blocking assignments?
+  end
+endmodule

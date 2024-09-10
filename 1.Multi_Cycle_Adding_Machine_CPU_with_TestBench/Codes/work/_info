@@ -1,0 +1,205 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\installed program\ModelSim\modelsim_ase\win32aloem\Projects\IO Adding Machine
+vAC
+Z1 !s100 Xfh1EN6EkQnL?lV_H4JmV1
+Z2 Id:VQKNSM3X8^9PgZ7Y0V12
+Z3 VbCRWkC<eF3ecYUN<]Mn:N1
+Z4 dF:\installed program\ModelSim\modelsim_ase\win32aloem\Projects\IO Adding Machine v2
+Z5 w1699274451
+Z6 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/AC.v
+Z7 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/AC.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/AC.v|
+Z10 o-work work -O0
+n@a@c
+Z11 !s108 1699771954.438000
+Z12 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/AC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z13 !s100 dJgQAA5VDWPlcY@djWga42
+Z14 INgKdXi:9N=dmgljVA>:3P2
+Z15 VF8gC1F2NgV9DZF[]M9?9l2
+R4
+Z16 w1699274479
+Z17 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Alu.v
+Z18 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Alu.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Alu.v|
+R10
+Z20 n@a@l@u
+Z21 !s108 1699771954.313000
+Z22 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vController
+Z23 !s100 FA=oiWKhK_8[MhjOl=jRz1
+Z24 ImcH4FUN6H=dz3C:DMgNTl1
+Z25 VUHcgUCGSEzkg=obMcEJ6_1
+R4
+Z26 w1699274455
+Z27 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Controller.v
+Z28 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Controller.v
+L0 5
+R8
+r1
+31
+Z29 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Controller.v|
+R10
+Z30 n@controller
+Z31 !s108 1699771954.165000
+Z32 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCPU
+Z33 !s100 l:J[=;OkI173iNl:aXPi01
+Z34 Ia>B_@Eoi?lD66U?M^=SQn0
+Z35 V3R@Y65INa6ea>c^ic==NZ0
+R4
+Z36 w1699276630
+Z37 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/CPU.v
+Z38 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/CPU.v
+L0 1
+R8
+r1
+31
+Z39 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/CPU.v|
+R10
+Z40 n@c@p@u
+Z41 !s108 1699771954.073000
+Z42 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/CPU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vData_Path
+Z43 I[4O`0NCeWgXlZCm`Nl3L13
+Z44 V8Y]Hff[9Va:U1lL14Nbo80
+R4
+Z45 w1699771953
+Z46 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Data_Path.v
+Z47 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Data_Path.v
+L0 1
+R8
+r1
+31
+Z48 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Data_Path.v|
+R10
+Z49 n@data_@path
+Z50 !s100 6X^1<`YTEl28NC3=bG3Nz2
+Z51 !s108 1699771953.987000
+Z52 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Data_Path.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIR
+Z53 !s100 z98GoT<;IIl:Y[VSHF<_<0
+Z54 I<<Sz>FDj9li?ZOR]K^`_L2
+Z55 VX^Yb3n3CaSd]6`VVUf0Zc2
+R4
+Z56 w1699274497
+Z57 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/IR.v
+Z58 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/IR.v
+L0 1
+R8
+r1
+31
+Z59 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/IR.v|
+R10
+n@i@r
+Z60 !s108 1699771952.472000
+Z61 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/IR.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMemory
+Z62 !s100 :g[aK5iRDaWiKO;04NJ712
+Z63 Id1L<_7b>27];08fjASUh52
+Z64 VJ@nJ0bM^^[7Hj;nFQFMzd0
+R4
+Z65 w1699446078
+Z66 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Memory.v
+Z67 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Memory.v
+L0 1
+R8
+r1
+31
+Z68 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Memory.v|
+R10
+Z69 n@memory
+Z70 !s108 1699771798.906000
+Z71 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMUX
+Z72 !s100 @^i;>DAnn3gC02N__34c92
+Z73 IHXIXIAoM6IiU9h8^O;<030
+Z74 VjU8Ldliz]kc7K?HMZi^De2
+R4
+Z75 w1699274473
+Z76 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/MUX.v
+Z77 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/MUX.v
+L0 1
+R8
+r1
+31
+Z78 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/MUX.v|
+R10
+Z79 n@m@u@x
+Z80 !s108 1699771954.821000
+Z81 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/MUX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPC
+!i10b 1
+Z82 !s100 M;TGDfCgF6Bd7nRLcTO7S2
+Z83 I@[Z62=k44fdkf10`3mT@:2
+Z84 Vni^EOKJK=T9@OZUN[UWz@2
+R4
+Z85 w1699274491
+Z86 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/PC.v
+Z87 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/PC.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1699771986.086000
+!s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/PC.v|
+Z88 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/PC.v|
+!s101 -O0
+R10
+n@p@c
+vTB_CPU
+Z89 !s100 :iBh@omh?gA3EKU[SS:C:1
+Z90 IeNCZebOIDg;Qgz2;1DhZH0
+Z91 Vo@eN5dZd:3<24zHIbSA?<1
+R4
+Z92 w1699280845
+Z93 8F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/TB_CPU.v
+Z94 FF:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/TB_CPU.v
+L0 1
+R8
+r1
+31
+Z95 !s90 -reportprogress|300|-work|work|F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/TB_CPU.v|
+R10
+Z96 n@t@b_@c@p@u
+Z97 !s108 1699771954.596000
+Z98 !s107 F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/TB_CPU.v|
+!i10b 1
+!s85 0
+!s101 -O0
