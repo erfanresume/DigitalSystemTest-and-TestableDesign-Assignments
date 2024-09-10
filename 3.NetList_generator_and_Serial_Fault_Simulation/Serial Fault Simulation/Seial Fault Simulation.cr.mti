@@ -1,0 +1,51 @@
+{F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/CKT.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/CKT.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CKT
+
+Top level modules:
+	CKT
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/component_library.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/component_library.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module bufg
+-- Compiling module notg
+-- Compiling module and_n
+-- Compiling module or_n
+-- Compiling module nand_n
+-- Compiling module nor_n
+-- Compiling module xor_n
+-- Compiling module xnor_n
+-- Compiling module fanout_n
+-- Compiling module pin
+-- Compiling module pout
+-- Compiling module dff
+
+Top level modules:
+	bufg
+	notg
+	and_n
+	or_n
+	nand_n
+	nor_n
+	xor_n
+	xnor_n
+	fanout_n
+	pin
+	pout
+	dff
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/Test.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/Test.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Test
+
+Top level modules:
+	Test
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/Syndrome.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Serial Fault_Assignmnet2/Syndrome.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Syndrome
+
+Top level modules:
+	Syndrome
+
+} {} {}}

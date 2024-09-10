@@ -1,0 +1,3 @@
+Fault-list dictionary must be filled like this:     
+Tester.FUT.O1.in[0], Fault Type= S@1,Syndrom=0010101 
+

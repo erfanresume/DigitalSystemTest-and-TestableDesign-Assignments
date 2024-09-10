@@ -1,0 +1,13 @@
+Fault: Test.FUT.G2.in[0] S@0 was detected by TestVector=010010 and time=580ns.
+Fault: Test.FUT.FO1.in S@0 was detected by TestVector=010010 and time=1200ns.
+Fault: Test.FUT.G3.in[1] S@1 was detected by TestVector=110100 and time=1330ns.
+Fault: Test.FUT.G4.in[1] S@1 was detected by TestVector=110100 and time=1950ns.
+Fault: Test.FUT.G5.in[1] S@0 was detected by TestVector=010010 and time=2750ns.
+Fault: Test.FUT.G6.in[1] S@0 was detected by TestVector=010111 and time=3280ns.
+Fault: Test.FUT.G6.in[1] S@0 was detected by TestVector=010010 and time=3370ns.
+Fault: Test.FUT.G7.in[1] S@1 was detected by TestVector=110100 and time=3810ns.
+Fault: Test.FUT.O1.in[0] S@1 was detected by TestVector=110100 and time=4430ns.
+Fault: Test.FUT.O1.in[0] S@0 was detected by TestVector=010111 and time=4830ns.
+Fault: Test.FUT.O1.in[0] S@0 was detected by TestVector=010010 and time=4920ns.
+Coverage = 68.750000
+

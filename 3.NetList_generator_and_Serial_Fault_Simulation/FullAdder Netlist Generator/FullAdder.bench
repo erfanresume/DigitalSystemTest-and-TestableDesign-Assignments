@@ -1,0 +1,21 @@
+
+#Bench file of module FullAdder
+INPUT (a)
+INPUT (b)
+INPUT (Cin)
+
+OUTPUT (sum)
+OUTPUT (Cout)
+
+FullAdder_wire_1 = XOR(FullAdder_wire_2, FullAdder_wire_3)
+FullAdder_wire_3 = XOR(FullAdder_wire_4, FullAdder_wire_5)
+FullAdder_wire_2 = BUF(Cin)
+FullAdder_wire_6 = AND(FullAdder_wire_2, FullAdder_wire_3)
+Cout = BUF(FullAdder_wire_7)
+FullAdder_wire_7 = OR(FullAdder_wire_8, FullAdder_wire_6)
+FullAdder_wire_5 = BUF(a)
+FullAdder_wire_8 = AND(FullAdder_wire_5, FullAdder_wire_4)
+FullAdder_wire_4 = BUF(b)
+sum = BUF(FullAdder_wire_1)
+
+END

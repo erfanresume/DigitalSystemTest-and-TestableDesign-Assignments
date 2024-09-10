@@ -1,0 +1,4 @@
+Detected Faults and fault coverage must be reporetd like this: 
+Fault:   Tester.FUT.O1.in[0] S@1 was detected by TestVector=000 at Time=50 ns.
+fault coverage = 100%
+

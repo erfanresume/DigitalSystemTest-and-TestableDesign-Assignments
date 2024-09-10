@@ -1,0 +1,16 @@
+module FullAdder(
+a,b,Cin,
+sum,Cout
+);
+input a;
+input b;
+input Cin;
+output sum;
+output Cout;
+wire l1,l2,l3;
+xor u1(l1,a,b);
+and u2(l2,a,b);
+and u3(l3,l1,Cin);
+or  u4(Cout,l2,l3);
+xor u5(sum,l1,Cin);
+endmodule

@@ -1,0 +1,349 @@
+(edif FullAdder
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2023 11 28 10 22 57)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -w FullAdder.ngc ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell XOR2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell AND2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OR2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library FullAdder_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell (rename LPM_XOR2_1_NO1_Mxor_l1 "LPM_XOR2_1")
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port (rename Data_0__ "Data<0>")
+              (direction INPUT)
+            )
+            (port (rename Data_1__ "Data<1>")
+              (direction INPUT)
+            )
+            (port Result
+              (direction OUTPUT)
+            )
+          )
+          (contents
+            (instance (rename Xo_0_1 "Xo<0>1")
+              (viewRef view_1 (cellRef XOR2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net (rename Data_0__ "Data<0>")
+              (joined
+                (portRef Data_0__)
+                (portRef I1 (instanceRef Xo_0_1))
+              )
+            )
+            (net (rename Data_1__ "Data<1>")
+              (joined
+                (portRef Data_1__)
+                (portRef I0 (instanceRef Xo_0_1))
+              )
+            )
+            (net Result
+              (joined
+                (portRef Result)
+                (portRef O (instanceRef Xo_0_1))
+              )
+            )
+          )
+      )
+    )
+    (cell (rename LPM_XOR2_1_Mxor_sum "LPM_XOR2_1")
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port (rename Data_0__ "Data<0>")
+              (direction INPUT)
+            )
+            (port (rename Data_1__ "Data<1>")
+              (direction INPUT)
+            )
+            (port Result
+              (direction OUTPUT)
+            )
+          )
+          (contents
+            (instance (rename Xo_0_1 "Xo<0>1")
+              (viewRef view_1 (cellRef XOR2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net (rename Data_0__ "Data<0>")
+              (joined
+                (portRef Data_0__)
+                (portRef I1 (instanceRef Xo_0_1))
+              )
+            )
+            (net (rename Data_1__ "Data<1>")
+              (joined
+                (portRef Data_1__)
+                (portRef I0 (instanceRef Xo_0_1))
+              )
+            )
+            (net Result
+              (joined
+                (portRef Result)
+                (portRef O (instanceRef Xo_0_1))
+              )
+            )
+          )
+      )
+    )
+    (cell FullAdder
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port Cout
+              (direction OUTPUT)
+            )
+            (port a
+              (direction INPUT)
+            )
+            (port b
+              (direction INPUT)
+            )
+            (port sum
+              (direction OUTPUT)
+            )
+            (port Cin
+              (direction INPUT)
+            )
+            (designator "xbr")
+            (property TYPE (string "FullAdder") (owner "Xilinx"))
+            (property KEEP_HIERARCHY (string "TRUE") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "FullAdder_FullAdder") (owner "Xilinx"))
+          )
+          (contents
+            (instance Mxor_sum
+              (viewRef view_1 (cellRef LPM_XOR2_1_Mxor_sum (libraryRef FullAdder_lib)))
+              (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+              (property NLW_MACRO_TAG (integer 1) (owner "Xilinx"))
+              (property NLW_MACRO_ALIAS (string "LPM_XOR2_1_Mxor_sum") (owner "Xilinx"))
+            )
+            (instance Mxor_l1
+              (viewRef view_1 (cellRef LPM_XOR2_1_NO1_Mxor_l1 (libraryRef FullAdder_lib)))
+              (property NLW_UNIQUE_ID (integer 1) (owner "Xilinx"))
+              (property NLW_MACRO_TAG (integer 2) (owner "Xilinx"))
+              (property NLW_MACRO_ALIAS (string "LPM_XOR2_1_NO1_Mxor_l1") (owner "Xilinx"))
+            )
+            (instance l21
+              (viewRef view_1 (cellRef AND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance l31
+              (viewRef view_1 (cellRef AND2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance Cout1
+              (viewRef view_1 (cellRef OR2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename a_IBUF_renamed_0 "a_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename b_IBUF_renamed_1 "b_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Cin_IBUF_renamed_2 "Cin_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename Cout_OBUF_renamed_3 "Cout_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename sum_OBUF_renamed_4 "sum_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net Cin
+              (joined
+                (portRef Cin)
+                (portRef I (instanceRef Cin_IBUF_renamed_2))
+              )
+            )
+            (net Cin_IBUF
+              (joined
+                (portRef Data_0__ (instanceRef Mxor_sum))
+                (portRef I1 (instanceRef l31))
+                (portRef O (instanceRef Cin_IBUF_renamed_2))
+              )
+            )
+            (net Cout
+              (joined
+                (portRef Cout)
+                (portRef O (instanceRef Cout_OBUF_renamed_3))
+              )
+            )
+            (net Cout_OBUF
+              (joined
+                (portRef O (instanceRef Cout1))
+                (portRef I (instanceRef Cout_OBUF_renamed_3))
+              )
+            )
+            (net a
+              (joined
+                (portRef a)
+                (portRef I (instanceRef a_IBUF_renamed_0))
+              )
+            )
+            (net a_IBUF
+              (joined
+                (portRef Data_1__ (instanceRef Mxor_l1))
+                (portRef I0 (instanceRef l21))
+                (portRef O (instanceRef a_IBUF_renamed_0))
+              )
+            )
+            (net b
+              (joined
+                (portRef b)
+                (portRef I (instanceRef b_IBUF_renamed_1))
+              )
+            )
+            (net b_IBUF
+              (joined
+                (portRef Data_0__ (instanceRef Mxor_l1))
+                (portRef I1 (instanceRef l21))
+                (portRef O (instanceRef b_IBUF_renamed_1))
+              )
+            )
+            (net l1
+              (joined
+                (portRef Data_1__ (instanceRef Mxor_sum))
+                (portRef Result (instanceRef Mxor_l1))
+                (portRef I0 (instanceRef l31))
+              )
+            )
+            (net l2
+              (joined
+                (portRef O (instanceRef l21))
+                (portRef I1 (instanceRef Cout1))
+              )
+            )
+            (net l3
+              (joined
+                (portRef O (instanceRef l31))
+                (portRef I0 (instanceRef Cout1))
+              )
+            )
+            (net sum
+              (joined
+                (portRef sum)
+                (portRef O (instanceRef sum_OBUF_renamed_4))
+              )
+            )
+            (net sum_OBUF
+              (joined
+                (portRef Result (instanceRef Mxor_sum))
+                (portRef I (instanceRef sum_OBUF_renamed_4))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design FullAdder
+    (cellRef FullAdder
+      (libraryRef FullAdder_lib)
+    )
+    (property PART (string "xbr") (owner "Xilinx"))
+  )
+)
+

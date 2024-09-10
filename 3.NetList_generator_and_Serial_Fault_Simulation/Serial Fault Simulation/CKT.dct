@@ -1,0 +1,32 @@
+Syndrome.FUT.G2.in[1],Fault Type=S@0,Syndrome=xxx000
+
+Syndrome.FUT.G2.in[0],Fault Type=S@0,Syndrome=xxx100
+
+Syndrome.FUT.FO1.in,Fault Type=S@1,Syndrome=xxx000
+
+Syndrome.FUT.FO1.in,Fault Type=S@0,Syndrome=xxx100
+
+Syndrome.FUT.G3.in[1],Fault Type=S@1,Syndrome=xxx001
+
+Syndrome.FUT.G3.in[0],Fault Type=S@1,Syndrome=xxx000
+
+Syndrome.FUT.G4.in[1],Fault Type=S@1,Syndrome=xxx001
+
+Syndrome.FUT.G4.in[0],Fault Type=S@1,Syndrome=xxx000
+
+Syndrome.FUT.G5.in[1],Fault Type=S@0,Syndrome=xxx100
+
+Syndrome.FUT.G5.in[0],Fault Type=S@0,Syndrome=xxx000
+
+Syndrome.FUT.G6.in[1],Fault Type=S@0,Syndrome=xxx110
+
+Syndrome.FUT.G6.in[0],Fault Type=S@0,Syndrome=xxx000
+
+Syndrome.FUT.G7.in[1],Fault Type=S@1,Syndrome=xxx001
+
+Syndrome.FUT.G7.in[0],Fault Type=S@1,Syndrome=xxx000
+
+Syndrome.FUT.O1.in[0],Fault Type=S@1,Syndrome=xxx001
+
+Syndrome.FUT.O1.in[0],Fault Type=S@0,Syndrome=xxx110
+
