@@ -1,0 +1,80 @@
+`timescale 1 ns / 1ns
+
+module Tester ();
+  
+  parameter numOfFaults = 16;
+  parameter initialExpFCount = 5;
+  parameter utLimit = 13;
+  parameter desiredCoverage =95;
+  reg a, b, c, d, e, f; 
+  wire woG, woF;
+  reg [8*50:1] wireName;
+  reg stuckAtVal; 
+  reg [5:0] testVector; 
+  reg [1:numOfFaults] detectedListCT, detectedListAT;
+  integer faultFile, testFile, status, uTests, detectedFaultsCT, expFCountCT, faultIndex; 
+  integer tmp, newDiscovered, coverage, detectedFaultsAT,AcceptableTestVectors=0,AllTestVectors=0;
+
+  CKT GUT (a, b, c, d, e, f, woG);
+  CKT FUT (a, b, c, d, e, f, woF);
+  
+  //List of collapsed fault in CKT.flt
+  initial begin
+    $FaultCollapsing (Tester.FUT, "CKT.flt"); 
+    repeat (15) #73 {a, b, c, d, e, f} = {a, b, c, d, e, f} + 1;
+  end 
+   
+  initial begin
+    uTests = 0; coverage = 0; faultIndex = 1; detectedListAT = 0; 
+    expFCountCT = initialExpFCount;
+    testFile = $fopen("CKT.tst", "w");
+    #10;
+   
+while (coverage < desiredCoverage && uTests < utLimit) begin 
+      detectedFaultsCT=0; detectedListCT=0; detectedFaultsAT=0;
+      testVector = $random($time);
+      AcceptableTestVectors = AcceptableTestVectors + 1;
+      uTests = uTests + 1;
+      faultIndex = 1;
+      #10;
+      newDiscovered = 0;
+      faultFile = $fopen("CKT.flt", "r");
+      while(!$feof(faultFile)) begin // Fault Injection loop 
+        status=$fscanf(faultFile,"%s s@%b\n",wireName,stuckAtVal);
+        $InjectFault(wireName, stuckAtVal);
+        {a, b, c, d, e, f} = testVector;
+        #60;
+        if(woG != woF) begin
+          detectedFaultsCT = detectedFaultsCT + 1;
+          detectedListCT[faultIndex] = 1'b1;
+          if(detectedListAT[faultIndex] == 0)
+          newDiscovered = newDiscovered + 1;
+        end//end of if 
+        $RemoveFault(wireName);
+        #20;
+        faultIndex = faultIndex + 1;
+      end//end of while(!feof(FaultFile))
+      $fclose(faultFile);
+      detectedFaultsAT = 0;
+      if(detectedFaultsCT < expFCountCT) tmp = expFCountCT / 2;
+      else tmp = (detectedFaultsCT + expFCountCT) / 2;
+      expFCountCT = tmp;
+      if(detectedFaultsCT >= expFCountCT && (newDiscovered > 0)) begin
+         detectedFaultsAT = 0;
+        for(faultIndex=1; faultIndex<=numOfFaults; faultIndex=faultIndex+1)
+            if((detectedListAT[faultIndex]==1) || (detectedListCT[faultIndex]==1)) begin
+              detectedListAT[faultIndex] = 1'b1; detectedFaultsAT = detectedFaultsAT + 1;
+            end
+        //$fdisplay(testFile, "detectedFaultsAT = %f", detectedFaultsAT);
+        coverage = 100 * detectedFaultsAT / numOfFaults;
+        $fdisplay(testFile, "Test vector%0d is = %b",AcceptableTestVectors, testVector);
+        //$fdisplay(testFile, "Coverage = %f", coverage);
+      end
+      $fdisplay(testFile, "%b", testVector);
+      AllTestVectors = AllTestVectors +1;
+      #10;
+    end//end of while of Coverage
+    $fdisplay(testFile, "Fault Coverage of Generated Test Set is = %f", coverage);
+    $fdisplay(testFile, "We Generated %0d Consecutive Random tests", AllTestVectors);
+  end
+endmodule
