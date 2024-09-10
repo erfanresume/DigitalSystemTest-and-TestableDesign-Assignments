@@ -1,0 +1,64 @@
+{F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/TB_CPU.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/TB_CPU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TB_CPU
+
+Top level modules:
+	TB_CPU
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/Data_Path.v} {1 {vlog -work work {F:\installed program\ModelSim\modelsim_ase\win32aloem\Projects\Full scan design of adding machine\Data_Path.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Data_Path
+
+Top level modules:
+	Data_Path
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/Mux.v} {1 {vlog -work work {F:\installed program\ModelSim\modelsim_ase\win32aloem\Projects\Full scan design of adding machine\Mux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX
+
+Top level modules:
+	MUX
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/ALU.v} {1 {vlog -work work {F:\installed program\ModelSim\modelsim_ase\win32aloem\Projects\Full scan design of adding machine\ALU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/IR.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/IR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IR
+
+Top level modules:
+	IR
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/PC.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/PC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/Controller.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/AC.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/AC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module AC
+
+Top level modules:
+	AC
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/CPU.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/Full scan design of adding machine/CPU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}}

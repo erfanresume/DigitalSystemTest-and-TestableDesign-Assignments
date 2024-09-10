@@ -1,0 +1,64 @@
+{F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Controller.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Controller.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/AC.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/AC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module AC
+
+Top level modules:
+	AC
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/CPU.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/CPU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/TB_CPU.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/TB_CPU.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TB_CPU
+
+Top level modules:
+	TB_CPU
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Data_Path.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Data_Path.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Data_Path
+
+Top level modules:
+	Data_Path
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Alu.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/Alu.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/MUX.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/MUX.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX
+
+Top level modules:
+	MUX
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/IR.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/IR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IR
+
+Top level modules:
+	IR
+
+} {} {}} {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/PC.v} {1 {vlog -work work {F:/installed program/ModelSim/modelsim_ase/win32aloem/Projects/IO Adding Machine v2/PC.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}}
